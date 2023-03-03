@@ -36,5 +36,10 @@ server.use((err, req, res, next) => {
   res.status(status).send(message);
 });
 
+server.get("*", function (req, res) {
+  res
+    .status(404)
+    .json({ message: "Error en la ruta solicitada", statuscode: 404 });
+});
 
 module.exports = server;
