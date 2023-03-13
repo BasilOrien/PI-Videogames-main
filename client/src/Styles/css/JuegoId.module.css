@@ -1,0 +1,75 @@
+.l {
+  color: white;
+}
+.gameInfo {
+  background-color: #151515c5;
+  display: flex;
+  width: 100vw;
+  overflow-x: hidden;
+  flex-direction: column;
+  height: 100%;
+}
+.gameInfo h2 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #5625ff;
+  margin-top: 2vmin;
+}
+.gameInfo img {
+  width: 100%;
+  height: 80vh;
+  box-shadow: 0 0 10px #5625ff;
+}
+.gameInfo p {
+  color: white;
+  text-shadow: 1px 1px 1px #5625ff;
+}
+.gameInfo .gamep {
+  background-color: none;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.textContainer h2 {
+  font-size: 10vmin;
+}
+.textContainer p {
+  font-size: x-large;
+  width: 90%;
+  text-align: justify;
+}
+.textContainer p::first-letter {
+  color: red;
+  margin-left: 1rem;
+}
+.anotherInfo {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-shadow: 1px 1px 1px #5625ff;
+  padding: 1vmin;
+}
+.anotherInfo h3 {
+  background-color: #151515c5;
+  box-shadow: 0 0 5px #5625ff;
+  margin-bottom: 2vmin;
+  font-size: xx-large;
+  text-align: center;
+  width: 100%;
+}
+.anotherInfo h4 {
+  margin-bottom: 1vmin;
+  width: 100%;
+  text-align: center;
+  font-size: x-large;
+}
+.anotherInfo span {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2vmin;
+}

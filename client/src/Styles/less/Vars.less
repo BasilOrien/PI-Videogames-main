@@ -1,0 +1,33 @@
+//colors
+@mainColor: #151515;
+@mainColorTransparent: #1515156f;
+@mainColorTransparentDark: #151515c5;
+
+@darkViolet: #5625ff;
+@contrastColor: #fff;
+@lg: linear-gradient(
+  30deg,
+  rgba(122, 129, 196, 1) 0%,
+  rgba(187, 234, 202, 1) 35%,
+  rgba(82, 223, 217, 1) 100%
+);
+
+@darkLg: linear-gradient(
+  30deg,
+  rgb(35, 50, 192) 0%,
+  rgb(69, 233, 121) 35%,
+  rgb(5, 240, 228) 100%
+);
+
+//vars
+@mainRadius: 10px;
+@secondaryRadius: 4px;
+
+// mixins
+.commonButton(@width: 0, @height: 0, @padding: 0, @thisButtonBg: orange,) {
+  border-radius: @secondaryRadius;
+  width: @width;
+  height: @height;
+  background: @thisButtonBg;
+  padding: @padding;
+}

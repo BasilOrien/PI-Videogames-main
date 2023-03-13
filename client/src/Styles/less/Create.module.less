@@ -1,0 +1,92 @@
+@import url("./Vars.less");
+.genresSelect {
+  background-color: none;
+}
+.createContainer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  form {
+    text-align: center;
+    width: 40%;
+    padding: 4vmin;
+    border-radius: @mainRadius;
+    box-shadow: 0 0 10px @darkViolet;
+    background-color: @mainColorTransparentDark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input {
+      background-color: @mainColorTransparentDark;
+      box-shadow: 0 0 10px @darkViolet;
+      color: gray;
+      border-radius: @secondaryRadius;
+      text-align: center;
+      width: 100%;
+      padding: 1.5vmin;
+      margin: 0.5vmin 0;
+  
+      &::placeholder {
+        color: gray;
+      }
+    }
+    textarea {
+      display: inline-block;
+      border-radius: @secondaryRadius;
+      text-align: center;
+      padding: 1vmin;
+      height: 15vmin;
+      border-style: solid;
+      resize: none;
+      background-color: @mainColorTransparentDark;
+      box-shadow: 0 0 10px @darkViolet;
+      color: white;
+      &::placeholder {
+        color: gray;
+      }
+    }
+    label {
+      margin-bottom: 1vmin;
+      color: gray;
+    }
+    button {
+      border-radius: @secondaryRadius;
+      text-align: center;
+      margin: 0.5vmin 0;
+      padding: 1vmin;
+      background-color: @mainColorTransparentDark;
+      box-shadow: 0 0 10px @darkViolet;
+      color: gray;
+    }
+    select {
+      margin: 1vmin 0;
+      padding: 1vmin;
+      background-color: @mainColorTransparentDark;
+      box-shadow: 0 0 10px @darkViolet;
+      color: gray;
+      width: 100%;
+      option {
+        width: 100%;
+        margin: 0.5vmin;
+        background-color: @mainColorTransparentDark;
+        box-shadow: 0 0 10px @darkViolet;
+      }
+    }
+    .rangeContainer {
+      border-radius: @secondaryRadius;
+      label {
+        font-size: x-large;
+      }
+      display: grid;
+      padding: 2vmin;
+      background-color: @mainColorTransparentDark;
+      box-shadow: 0 0 10px @darkViolet;
+    }
+    .submitBtn {
+      background: @darkLg;
+      color: @darkViolet;
+    }
+  }
+}

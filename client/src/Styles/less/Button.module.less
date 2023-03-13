@@ -1,0 +1,12 @@
+@import url("./Vars.less");
+
+.button {
+  box-shadow: 0 0 10px @darkViolet;
+  &:hover {
+    background: @darkLg;
+    box-shadow: 0 0 4px @darkViolet;
+  }
+}
+.giantBtn {
+  .commonButton(@width: 70vmin,@height: 7vmin,@thisButtonBg: @lg);
+}

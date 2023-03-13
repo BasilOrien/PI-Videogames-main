@@ -1,0 +1,90 @@
+.genresSelect {
+  background-color: none;
+}
+.createContainer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.createContainer form {
+  text-align: center;
+  width: 40%;
+  padding: 4vmin;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #5625ff;
+  background-color: #151515c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.createContainer form input {
+  background-color: #151515c5;
+  box-shadow: 0 0 10px #5625ff;
+  color: gray;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  padding: 1.5vmin;
+  margin: 0.5vmin 0;
+}
+.createContainer form input::placeholder {
+  color: gray;
+}
+.createContainer form textarea {
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1vmin;
+  height: 15vmin;
+  border-style: solid;
+  resize: none;
+  background-color: #151515c5;
+  box-shadow: 0 0 10px #5625ff;
+  color: white;
+}
+.createContainer form textarea::placeholder {
+  color: gray;
+}
+.createContainer form label {
+  margin-bottom: 1vmin;
+  color: gray;
+}
+.createContainer form button {
+  border-radius: 4px;
+  text-align: center;
+  margin: 0.5vmin 0;
+  padding: 1vmin;
+  background-color: #151515c5;
+  box-shadow: 0 0 10px #5625ff;
+  color: gray;
+}
+.createContainer form select {
+  margin: 1vmin 0;
+  padding: 1vmin;
+  background-color: #151515c5;
+  box-shadow: 0 0 10px #5625ff;
+  color: gray;
+  width: 100%;
+}
+.createContainer form select option {
+  width: 100%;
+  margin: 0.5vmin;
+  background-color: #151515c5;
+  box-shadow: 0 0 10px #5625ff;
+}
+.createContainer form .rangeContainer {
+  border-radius: 4px;
+  display: grid;
+  padding: 2vmin;
+  background-color: #151515c5;
+  box-shadow: 0 0 10px #5625ff;
+}
+.createContainer form .rangeContainer label {
+  font-size: x-large;
+}
+.createContainer form .submitBtn {
+  background: linear-gradient(30deg, #2332c0 0%, #45e979 35%, #05f0e4 100%);
+  color: #5625ff;
+}

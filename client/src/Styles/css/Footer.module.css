@@ -1,0 +1,41 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 8vmin;
+  background-color: #151515c5;
+  display: flex;
+  justify-content: space-around;
+  padding: 1vmin;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  width: 60vmin;
+}
+.searchbar input {
+  padding: 1vmin;
+  height: 4vmin;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid;
+  border-right: none;
+  width: 100%;
+  background-color: #151515c5;
+  color: gray;
+}
+.searchbar button {
+  background-color: #151515c5;
+  color: gray;
+  height: 4vmin;
+  border-radius: 0 10px 10px 0;
+  padding: 1vmin;
+  border: 1px solid;
+}
+.pageBtnLeft {
+  transform: scaleX(-1);
+}
+.pageBtn {
+  filter: invert(100%);
+  box-shadow: 0 0 10px #5625ff;
+}

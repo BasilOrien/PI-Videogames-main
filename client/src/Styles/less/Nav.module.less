@@ -1,0 +1,25 @@
+@import url("./Vars.less");
+.nav {
+  display: flex;
+}
+.nav__ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around;
+  box-shadow: 0 0 3px @darkViolet;
+  padding: 2vmin;
+  background-color: @mainColorTransparent;
+}
+
+.nav__button {
+  display: block;
+  .commonButton(@width: 20vw ,@height: 100%,@padding:1vmin, @thisButtonBg: @lg);
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  box-shadow: 0 0 15px @darkViolet;
+  &:hover {
+    background: @darkLg;
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+  box-shadow: 0 0 10px #5625ff;
+}
+.button:hover {
+  background: linear-gradient(30deg, #2332c0 0%, #45e979 35%, #05f0e4 100%);
+  box-shadow: 0 0 4px #5625ff;
+}
+.giantBtn {
+  border-radius: 4px;
+  width: 70vmin;
+  height: 7vmin;
+  background: linear-gradient(30deg, #7a81c4 0%, #bbeaca 35%, #52dfd9 100%);
+  padding: 0;
+}

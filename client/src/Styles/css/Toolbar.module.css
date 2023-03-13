@@ -1,0 +1,28 @@
+.toolbar {
+  position: fixed;
+  rotate: calc(50deg);
+  height: 10%;
+  width: 150px;
+  top: 0;
+  left: -120px;
+  bottom: 0;
+  margin: auto 0;
+  transition: 0.3s;
+  background-color: #fff;
+  color: #fff;
+}
+.toolbar:hover {
+  rotate: calc(0deg);
+  height: 50%;
+  width: 150px;
+  background-color: #151515a8;
+  left: 1px;
+}
+.toolbar h3 {
+  text-align: center;
+  margin: 2vmin 0;
+  font-size: smaller;
+}
+.toolbar select {
+  width: 100%;
+}

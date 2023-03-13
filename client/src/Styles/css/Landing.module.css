@@ -1,0 +1,9 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing:hover {
+  background-color: linear-gradient(30deg, #2332c0 0%, #45e979 25%, #05f0e4 100%);
+}
