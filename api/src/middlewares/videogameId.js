@@ -30,11 +30,18 @@ router.get("/:id", async function (req, res) {
           },
         ],
       });
-      if (typeof dbResponse === "object" ) {
-        res.json(dbResponse);
+      if (typeof dbResponse === "object") {
+        const a = {
+          ...dbResponse.dataValues,
+          platforms: dbResponse.dataValues.platform,
+          comesFromDb: true,
+        };
+        delete a.platform;
+        console.log(a);
+        res.json(a);
       } else {
         res.json("No se ha encontrado el recurso solicitado");
-        return
+        return;
       }
     }
   } catch (error) {
