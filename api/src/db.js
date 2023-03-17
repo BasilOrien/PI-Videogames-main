@@ -7,7 +7,8 @@ const axios = require("axios");
 const Genres = require("./models/Genres");
 const { BASE_URL, API_KEY } = process.env;
 const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`,
+  // `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`
+  "postgres://cuentaparaestudiosf:0mJQYZR9pjgH@ep-round-silence-018610.us-east-2.aws.neon.tech/neondb",
   {
     logging: false, // set to console.log to see the raw SQL queries
     native: false, // lets Sequelize know we can use pg-native for ~30% more speed
@@ -66,5 +67,5 @@ getGenres();
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
   conn: sequelize, // para importart la conexión { conn } = require('./db.js');
-  apiKey: API_KEY
+  apiKey: API_KEY,
 };
