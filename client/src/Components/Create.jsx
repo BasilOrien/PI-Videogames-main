@@ -75,6 +75,20 @@ const Create = () => {
 
   async function onSubmitHandler(e) {
     e.preventDefault();
+
+    if (
+      !newGameData.name ||
+      !newGameData.description ||
+      !newGameData.reldate ||
+      !newGameData.rating ||
+      !newGameData.image ||
+      !newGameData.platform ||
+      !newGameData.genre
+    ) {
+      alert("Faltan campos")
+      return;
+    }
+
     const axiosPostResponse = await axios
       .post("http://localhost:3001/videogames", {
         ...newGameData,

@@ -5,15 +5,16 @@
   display: flex;
   width: 100%;
   list-style: none;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   box-shadow: 0 0 3px #5625ff;
   padding: 2vmin;
-  background-color: #1515156f;
+  background-color: #151515;
 }
 .nav__button {
   display: block;
   border-radius: 4px;
-  width: 20vw;
+  width: 200px;
   height: 100%;
   background: linear-gradient(30deg, #7a81c4 0%, #bbeaca 35%, #52dfd9 100%);
   padding: 1vmin;

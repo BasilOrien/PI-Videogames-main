@@ -1,9 +1,54 @@
 .landing {
+  display: grid;
   height: 100vh;
-  display: flex;
-  justify-content: center;
+  place-items: center;
   align-items: center;
+  grid-template-columns: 1fr 1fr;
 }
 .landing:hover {
-  background-color: linear-gradient(30deg, #2332c0 0%, #45e979 25%, #05f0e4 100%);
+  background-color: linear-gradient(
+    30deg,
+    #2332c0 0%,
+    #45e979 25%,
+    #05f0e4 100%
+  );
+}
+
+.presentation_container {
+  color: white;
+}
+
+.presentation_container h1 {
+  font-size: 4rem;
+  text-shadow: 1px 1px black;
+}
+
+.presentation_container h2 {
+  font-size: 2.7rem;
+  text-shadow: 1px 1px black;
+}
+.landing button {
+  font-size: x-large;
+  border-radius: 20px;
+  box-shadow: 0 0 5px blue;
+}
+
+@media screen and (max-width: 768px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .presentation_container h1 {
+    font-size: 3rem;
+  }
+
+  .presentation_container h2 {
+    font-size: 2rem;
+  }
+  .landing button {
+    margin-top: 40px;
+  }
 }

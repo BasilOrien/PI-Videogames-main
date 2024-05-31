@@ -11,6 +11,11 @@ const Landing = () => {
     <Navigate to="/Inicio" />
   ) : location !== "/" && location !== "/landing" ? null : (
     <div className={Styles.landing}>
+      <div className={Styles.presentation_container}>
+        <h1>Proyecto Individual</h1>
+        <h2>Federico Carusso</h2>
+      </div>
+
       <Button
         value={"Game On"}
         classname={"giantBtn"}

@@ -10,7 +10,11 @@ const Card = ({ videogame }) => {
       <div className={Styles.platform__container}>
         {platform &&
           platform?.map((genre, key) => {
-            return <span key={key}>{genre}</span>;
+            if (key < 4) {
+              return <span key={key}>{genre}</span>;
+            }
+
+            return null;
           })}
         <button>
           <Link className={Styles.buttonLink} to={`/juego/${videogame.id}`}>
