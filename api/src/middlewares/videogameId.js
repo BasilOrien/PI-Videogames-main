@@ -11,7 +11,7 @@ router.get("/:id", async function (req, res) {
   try {
     if (!isNaN(id)) {
       const axiosResponse = await axios.get(
-        `${BASE_URL}games/${id}?key=${API_KEY}`
+        `${BASE_URL}/games/${id}?key=${API_KEY}`
       );
       const apiData = await axiosResponse.data;
       if (typeof apiData === "object" && !!Object.keys(apiData).length) {

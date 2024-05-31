@@ -5,8 +5,8 @@ const { Videogame, Genre } = require("../../db");
 module.exports = async function (req, res) {
   const { name, page } = req.query;
   try {
-    let url = `${BASE_URL}games?key=${API_KEY}&page=${page || 1}`;
-    let queryUrl = `${BASE_URL}games?search=${name}&key=${API_KEY}&page=${
+    let url = `${BASE_URL}/games?key=${API_KEY}&page=${page || 1}`;
+    let queryUrl = `${BASE_URL}/games?search=${name}&key=${API_KEY}&page=${
       page || 1
     }`;
     const axiosResponse = name
